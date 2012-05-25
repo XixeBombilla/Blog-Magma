@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>BlogMagma</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+<link href='http://fonts.googleapis.com/css?family=Russo+One' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Oxygen' rel='stylesheet' type='text/css'>
+
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+	<header id="header">
+		<%=image_tag "logo.jpg"%>
+	</header>
+
+		<div class="colL">
+			<h1>BLOG</h1>
+		</div>
+		<div class="colR">
+			<%= yield %>
+		</div>
+
+</body>
+</html>

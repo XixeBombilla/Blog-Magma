@@ -1,0 +1,15 @@
+body{margin:0; padding:0; background:url(../assets/back.jpg); font-family: 'Oxygen', sans-serif;}
+
+h1,h2,h3,h4,h5,h6{font-family: 'Russo One', sans-serif;}
+
+
+/**ID**/
+#header{position:absolute; z-index:1; left:0; background:#6f010a; width:77px; height:100%;}
+
+/**CLASS**/
+.content{width:960px; margin:auto; }
+
+.clear{clear:both;}
+
+.colL{width:200px; padding:20px; height:100%; float:right;  background:#666; color:#fff; }
+.colR{float:left; padding-left:100px; height:100%;}
