@@ -1,5 +1,5 @@
 class PublicController < ApplicationController
   def index
-    @primerPost = Articulo.first
+    @primerPost = Articulo.last
   end  
 end
