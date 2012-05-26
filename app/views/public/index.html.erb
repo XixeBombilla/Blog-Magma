@@ -1,6 +1,6 @@
-<h1 class="titulo"><%=image_tag "estrella.png" %> Título <%=image_tag "estrella.png" %></h1>
-<h6>Subtitulo</h6>
+<h1 class="titulo"><%=image_tag "estrella.png" %> <%=@primerPost.titulo%> <%=image_tag "estrella.png" %></h1>
+<h6><%=@primerPost.autor%></h6>
 <p>
-	Texto a mostrar en la parte de texto del Blog jejej
+	<%=@primerPost.descripcion%>
 </p>
 <hr class="soften">

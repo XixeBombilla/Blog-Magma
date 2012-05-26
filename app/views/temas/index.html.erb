@@ -1,0 +1,27 @@
+<h1 class="titulo">Lista de Temas</h1>
+<br/>
+<br/>
+
+<table>
+  <tr>
+    <th>Nombre</th>
+    <th>Propietario</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @temas.each do |tema| %>
+  <tr>
+    <td><%= tema.nombre %></td>
+    <td><%= tema.propietario %></td>
+    <td><%= link_to 'Ver', tema, class: "btn" %></td>
+    <td><%= link_to 'Editar', edit_tema_path(tema), class: "btn" %></td>
+    <td><%= link_to 'Eliminar', tema, confirm: 'Are you sure?', method: :delete, class: "btn" %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'Nuevo Tema', new_tema_path, class: "btn" %>

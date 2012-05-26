@@ -10,13 +10,19 @@
 </head>
 <body>
 	<header id="header">
-		<%=image_tag "logo.jpg"%>
+		<%=link_to (image_tag "logo.jpg"), root_path%>
 		<h6>BLOG</h6>
 	</header>
 
 	<div class="content">
 		<div class="colL">
-			Columna Izq
+			<h2>Temas</h2>
+			<hr class="soften">
+			<ul>
+				<% todos_temas.each do |tema|%>
+				<li><%=link_to tema.nombre, tema%></li>
+				<%end%>
+			</ul>
 		</div>
 		<div class="colR">
 			<%= yield %>

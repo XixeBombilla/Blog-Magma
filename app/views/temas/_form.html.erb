@@ -1,0 +1,25 @@
+<%= form_for(@tema) do |f| %>
+  <% if @tema.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@tema.errors.count, "error") %> prohibited this tema from being saved:</h2>
+
+      <ul>
+      <% @tema.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :nombre %><br />
+    <%= f.text_field :nombre %>
+  </div>
+  <div class="field">
+    <%= f.label :propietario %><br />
+    <%= f.text_field :propietario %>
+  </div>
+  <div class="actions">
+    <%= f.submit "Crear Tema", class: "btn"%>
+  </div>
+<% end %>

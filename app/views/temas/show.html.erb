@@ -1,0 +1,10 @@
+<h1 class="titulo"><%=image_tag "estrella.png" %> <%= @tema.nombre %> <%=image_tag "estrella.png" %></h1>
+<h6>Creador: <%= @tema.propietario %></h6>
+
+<h2>Posts:</h2>
+
+<ul>
+	<% @tema.articulos.each do |articulo|%>
+	<li><%=link_to articulo.titulo, articulo%></li>
+	<%end%>
+</ul>
