@@ -1,13 +1,13 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
 
 one:
-  titulo: MyString
-  autor: MyString
-  descripcion: MyString
-  tema: 
+  titulo: Primer Titulo
+  autor: Autor Uno
+  descripcion: Descripcion Uno
+  tema: Primer Tema
 
 two:
-  titulo: MyString
-  autor: MyString
-  descripcion: MyString
-  tema: 
+  titulo: Segundo Titulo
+  autor: Autor Dos
+  descripcion: Descripcion Dos
+  tema: Propietario Dos

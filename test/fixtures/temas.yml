@@ -1,9 +1,9 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
 
 one:
-  nombre: MyString
-  propietario: MyString
+  nombre: Primer Tema
+  propietario: Propietario Uno
 
 two:
-  nombre: MyString
-  propietario: MyString
+  nombre: Segundo Tema
+  propietario: Propietario Dos
