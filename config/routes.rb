@@ -4,6 +4,7 @@ BlogMagma::Application.routes.draw do
   
   resources :temas
   resources :articulos
+  resources :coments
 
    root :to => 'public#index'
 

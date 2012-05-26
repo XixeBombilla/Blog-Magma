@@ -2,9 +2,21 @@
 <h6>Creador: <%= @tema.propietario %></h6>
 
 <h2>Posts:</h2>
-
+<hr class="soften">
 <ul>
 	<% @tema.articulos.each do |articulo|%>
 	<li><%=link_to articulo.titulo, articulo%></li>
+	<hr class="soften">
 	<%end%>
 </ul>
+
+<% content_for :columnaI do%>
+<h2>Temas</h2>
+<hr class="soften">
+<ul>
+	<% todos_temas.each do |tema|%>
+	<li><%=link_to tema.nombre, tema%></li>
+	<hr class="soften">
+	<%end%>
+</ul>
+<%end%>

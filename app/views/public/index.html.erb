@@ -4,3 +4,14 @@
 	<%=@primerPost.descripcion%>
 </p>
 <hr class="soften">
+
+<% content_for :columnaI do%>
+<h2 >Temas</h2>
+<hr class="soften">
+<ul>
+	<% todos_temas.each do |tema|%>
+	<li><%=link_to tema.nombre, tema%></li>
+	<hr class="soften">
+	<%end%>
+</ul>
+<%end%>

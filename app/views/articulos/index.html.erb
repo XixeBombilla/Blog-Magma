@@ -14,10 +14,10 @@
 
 <% @articulos.each do |articulo| %>
   <tr>
-    <td><%= articulo.titulo %></td>
+    <td><%= articulo.titulo.truncate(20) %></td>
     <td><%= articulo.autor %></td>
-    <td><%= articulo.descripcion %></td>
-    <td><%= articulo.tema.nombre %></td>
+    <td><%= articulo.descripcion.truncate(20) %></td>
+    <td><%= articulo.tema.nombre.truncate(20) %></td>
     <td><%= link_to 'Ver', articulo , class: "btn"%></td>
     <td><%= link_to 'Editar', edit_articulo_path(articulo) , class: "btn"%></td>
     <td><%= link_to 'Eliminar', articulo, confirm: 'Are you sure?', method: :delete, class: "btn" %></td>
@@ -28,3 +28,18 @@
 <br />
 
 <%= link_to 'Nuevo Articulo', new_articulo_path, class: "btn" %>
+
+
+<% content_for :columnaI do%>
+<h2>Admin</h2>
+<hr class="soften">
+<ul>
+	<li><%=link_to "Temas", temas_path%></li>
+	<hr class="soften">
+	<li><%=link_to "Artículos", articulos_path%></li>
+	<hr class="soften">
+	<li><%=link_to "Ir al Sitio", root_path%></li>
+</ul>
+<br/>
+<%= link_to "Salir", destroy_user_session_path, method: :delete , class: "btn" %>
+<%end%>
