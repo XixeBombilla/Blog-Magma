@@ -35,7 +35,7 @@ ul{margin:0; padding:0; list-style:none;}
 .clear{clear:both;}
 
 .colL{width:200px; margin:10px; float:right; }
-.colR{float:left; margin:10px;}
+.colR{float:left; margin:10px; width:720px;}
 
 hr.soften {
 height: 1px;
