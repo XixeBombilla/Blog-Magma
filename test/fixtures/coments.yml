@@ -1,11 +1,11 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
 
 one:
-  articulo: 
   usuario: MyString
   comentario: MyText
+  articulo: 
 
 two:
-  articulo: 
   usuario: MyString
   comentario: MyText
+  articulo: 

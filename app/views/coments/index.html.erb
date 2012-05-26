@@ -1,10 +1,10 @@
-<h1 class="titulo">Lista de Comentarios</h1>
-<br/>
-<br/>
+<h1>Lista de Comentarios</h1>
+
 <table>
   <tr>
     <th>Usuario</th>
     <th>Comentario</th>
+    <th>Articulo</th>
     <th></th>
     <th></th>
     <th></th>
@@ -12,15 +12,13 @@
 
 <% @coments.each do |coment| %>
   <tr>
-    <td><%= coment.usuario.truncate(20) %></td>
+    <td><%= coment.usuario %></td>
     <td><%= coment.comentario %></td>
-    <td><%= link_to 'Eliminar', coments_path, confirm: 'Eliminar Comentario?', method: :delete, class: "btn" %></td>
+    <td><%= coment.articulo.titulo %></td>
+    <td><%= link_to 'Eliminar', coment, confirm: 'Are you sure?', method: :delete, class: "btn" %></td>
   </tr>
 <% end %>
 </table>
-
-
-
 <% content_for :columnaI do%>
 <h2>Admin</h2>
 <hr class="soften">
@@ -29,8 +27,10 @@
 	<hr class="soften">
 	<li><%=link_to "Artículos", articulos_path%></li>
 	<hr class="soften">
+	<li><%=link_to "Comentarios", coments_path%></li>
+	<hr class="soften">
 	<li><%=link_to "Ir al Sitio", root_path%></li>
 </ul>
 <br/>
-<%= link_to "Salir", destroy_user_session_path, method: :delete , class: "btn" %>
+<%= link_to "Salir", destroy_user_session_path, method: :delete, class: "btn" %>
 <%end%>

@@ -15,10 +15,6 @@
     <h6>Usuario:</h6>
     <%= f.text_field :usuario %>
   </div>
-<div class="field">
-    <h6>Articulo:</h6>
-	<%= f.collection_select :articulo_id, Articulo.all, :id, :titulo %>
-	  </div>
   <div class="field">
     <h6>Comentario:</h6>
     <%= f.text_area :comentario , :rows => "5"%>
@@ -26,6 +22,9 @@
 <div class="actions">
     <%= f.submit "Comentar", class: "btn"%>
   </div>
+<div class="ocultar">
+	<%= f.collection_select :articulo_id, Articulo.all, :id, :titulo %>
+	  </div>
 <%end%>
 <% content_for :columnaI do%>
 <h2>Temas</h2>

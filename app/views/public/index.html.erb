@@ -21,6 +21,9 @@
 <div class="actions">
     <%= f.submit "Comentar", class: "btn"%>
   </div>
+<div class="ocultar">
+	<%= f.collection_select :articulo_id, Articulo.all, :id, :titulo %>
+	  </div>
 <%end%>
 <% content_for :columnaI do%>
 <h2 >Temas</h2>
