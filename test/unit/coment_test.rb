@@ -1,7 +1,9 @@
 require 'test_helper'
 
 class ComentTest < ActiveSupport::TestCase
-  # test "the truth" do
-  #   assert true
-  # end
+
+ def campos_nada
+    c = Coment.new
+    asset !c.valid?, "Usuario o Comentario no validado"
+ end
 end
