@@ -19,7 +19,13 @@ border: 1px solid #CCC;
 border-radius: 3px;
 }
 
-a {
+a:link {
+color:#666;
+padding:5px;
+text-decoration: none;
+}
+
+a:visited {
 color:#666;
 padding:5px;
 text-decoration: none;

@@ -4,11 +4,15 @@
 <%= @articulo.descripcion %>
 
 <hr class="soften">
+<% if @articulo.coments.count == 0%>
+<h4>Se el primero en comentar !</h4>
+<%else%>
 	<% @articulo.coments.each do |coment|%>
 		<h6><%=coment.usuario%> comenta:</h6>
 		<%= coment.comentario%>
 		<hr class="soften">
 	<%end%>
+<%end%>
 <hr class="soften">
 <%= form_for @articulo.coments.new do |f| %>
 <div class="field">
