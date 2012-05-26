@@ -4,7 +4,7 @@
 	<%=@primerPost.descripcion%>
 </p>
 <hr class="soften">
-	<% @articulo.coments.each do |coment|%>
+	<% @primerPost.coments.each do |coment|%>
 		<h6>Usuario: <%=coment.usuario%></h6>
 		<%= coment.comentario%>
 	<%end%>
