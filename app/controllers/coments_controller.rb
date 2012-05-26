@@ -1,7 +1,7 @@
 class ComentsController < ApplicationController
   # GET /coments
   # GET /coments.json
-  before_filter :authenticate_user!
+  before_filter :authenticate_user!, :except => [:create]
   def index
     @coments = Coment.all
 
