@@ -20,6 +20,14 @@ border-radius: 3px;
 }
 
 a {
+color:#666;
+text-decoration: none;
+}
+
+a {
+background:#333;
+color:#fff;
+padding:5px;
 text-decoration: none;
 }
 
