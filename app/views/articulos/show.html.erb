@@ -14,14 +14,22 @@
 	<%end%>
 <%end%>
 <hr class="soften">
+<% if flash[:notice] %>
+   <p class="flash-notice"><%= flash[:notice] %></p>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$(".flash-notice").fadeOut(3000);
+	});
+</script>
+ <% end %>
 <%= form_for @articulo.coments.new do |f| %>
 <div class="field">
     <h6>Usuario:</h6>
-    <%= f.text_field :usuario %>
+    <%= f.text_field :usuario , :placeholder => "Tu Nombre"%>
   </div>
   <div class="field">
     <h6>Comentario:</h6>
-    <%= f.text_area :comentario , :rows => "5"%>
+    <%= f.text_area :comentario , :rows => "5", :placeholder => "Que te gustaría comentar?"%>
   </div>
 <div class="actions">
     <%= f.submit "Comentar", class: "btn"%>

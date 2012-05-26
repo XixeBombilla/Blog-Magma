@@ -54,7 +54,8 @@ ul{margin:0; padding:0; list-style:none;}
 .colL{width:200px; margin:10px; float:right; }
 .colL h2{color:#f8b505; }
 .colR{float:left; margin:10px; width:720px;}
-
+.flash-notice{background:#f8b505; padding:5px;
+color:#fff;}
 .left{float:left;}
 
 hr.soften {

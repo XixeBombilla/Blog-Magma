@@ -35,10 +35,10 @@ class ComentsController < ApplicationController
 
     respond_to do |format|
       if @coment.save
-        format.html { redirect_to articulo_path(@coment.articulo_id), notice: 'Coment was successfully created.' }
+        format.html { redirect_to articulo_path(@coment.articulo_id), notice: 'Gracias por Comentar !' }
         format.json { render json: @coment, status: :created, location: @coment }
       else
-        format.html { render action: "new" }
+        format.html { redirect_to articulo_path(@coment.articulo_id), notice: 'Falta llenar los campos.'}
         format.json { render json: @coment.errors, status: :unprocessable_entity }
       end
     end
