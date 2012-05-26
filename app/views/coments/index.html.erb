@@ -14,7 +14,7 @@
   <tr>
     <td><%= coment.usuario %></td>
     <td><%= coment.comentario %></td>
-    <td><%#= coment.articulo.titulo %></td>
+    <td><%= coment.articulo.titulo %></td>
     <td><%= link_to 'Eliminar', coment, confirm: 'Are you sure?', method: :delete, class: "btn" %></td>
   </tr>
 <% end %>
