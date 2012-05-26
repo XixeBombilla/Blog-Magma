@@ -44,7 +44,7 @@ class ArticulosController < ApplicationController
 
     respond_to do |format|
       if @articulo.save
-        format.html { redirect_to @articulo, notice: 'Articulo was successfully created.' }
+        format.html { redirect_to articulos_path, notice: 'Articulo was successfully created.' }
         format.json { render json: @articulo, status: :created, location: @articulo }
       else
         format.html { render action: "new" }

@@ -4,7 +4,24 @@
 	<%=@primerPost.descripcion%>
 </p>
 <hr class="soften">
-
+	<% @articulo.coments.each do |coment|%>
+		<h6>Usuario: <%=coment.usuario%></h6>
+		<%= coment.comentario%>
+	<%end%>
+<hr class="soften">
+<%= form_for @articulo.coments.new do |f| %>
+<div class="field">
+    <%= f.label :usuario %><br />
+    <%= f.text_field :usuario %>
+  </div>
+  <div class="field">
+    <%= f.label :comentario %><br />
+    <%= f.text_area :comentario , :rows => "5"%>
+  </div>
+<div class="actions">
+    <%= f.submit "Comentar", class: "btn"%>
+  </div>
+<%end%>
 <% content_for :columnaI do%>
 <h2 >Temas</h2>
 <hr class="soften">

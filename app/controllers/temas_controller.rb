@@ -44,7 +44,7 @@ class TemasController < ApplicationController
 
     respond_to do |format|
       if @tema.save
-        format.html { redirect_to @tema, notice: 'Tema was successfully created.' }
+        format.html { redirect_to temas_path, notice: 'Tema was successfully created.' }
         format.json { render json: @tema, status: :created, location: @tema }
       else
         format.html { render action: "new" }
