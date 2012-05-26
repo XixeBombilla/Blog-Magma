@@ -18,7 +18,7 @@
 <h4>Se el primero en comentar !</h4>
 <%else%>
 	<% @primerPost.coments.each do |coment|%>
-		<h6>Usuario: <%=coment.usuario%></h6>
+		<h6><%=coment.usuario%> comenta:</h6>
 		<%= coment.comentario%>
 	<%end%>
 <%end%>
