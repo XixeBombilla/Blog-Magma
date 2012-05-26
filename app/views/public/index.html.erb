@@ -4,7 +4,7 @@
 	<%=@primerPost.descripcion%>
 </p>
 <hr class="soften">
-<% if @articulo.coments.count == 0%>
+<% if @primerPost.coments.count == 0%>
 <h4>Se el primero en comentar !</h4>
 <%else%>
 	<% @primerPost.coments.each do |coment|%>
