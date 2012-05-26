@@ -1,7 +1,7 @@
 require 'test_helper'
 
 class ArticuloTest < ActiveSupport::TestCase
-  # test "the truth" do
-  #   assert true
-  # end
+  def primer_articulo
+    assert_not_nil(Articulo.first)
+  end
 end
