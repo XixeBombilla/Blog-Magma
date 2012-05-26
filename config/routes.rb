@@ -7,5 +7,7 @@ BlogMagma::Application.routes.draw do
   resources :coments
 
    root :to => 'public#index'
+   
+   match "coments", :to => "coments#index", :as => :coments
 
 end

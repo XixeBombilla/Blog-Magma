@@ -5,17 +5,22 @@
 
 <hr class="soften">
 	<% @articulo.coments.each do |coment|%>
-		<h6>Usuario: <%=coment.usuario%></h6>
+		<h6><%=coment.usuario%> comenta:</h6>
 		<%= coment.comentario%>
+		<hr class="soften">
 	<%end%>
 <hr class="soften">
 <%= form_for @articulo.coments.new do |f| %>
 <div class="field">
-    <%= f.label :usuario %><br />
+    <h6>Usuario:</h6>
     <%= f.text_field :usuario %>
   </div>
+<div class="field">
+    <h6>Articulo:</h6>
+	<%= f.collection_select :articulo_id, Articulo.all, :id, :titulo %>
+	  </div>
   <div class="field">
-    <%= f.label :comentario %><br />
+    <h6>Comentario:</h6>
     <%= f.text_area :comentario , :rows => "5"%>
   </div>
 <div class="actions">

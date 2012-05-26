@@ -11,11 +11,11 @@
 <hr class="soften">
 <%= form_for @primerPost.coments.new do |f| %>
 <div class="field">
-    <%= f.label :usuario %><br />
+    <h6>Usuario:</h6>
     <%= f.text_field :usuario %>
   </div>
   <div class="field">
-    <%= f.label :comentario %><br />
+    <h6>Comentario:</h6>
     <%= f.text_area :comentario , :rows => "5"%>
   </div>
 <div class="actions">

@@ -1,0 +1,36 @@
+<h1 class="titulo">Lista de Comentarios</h1>
+<br/>
+<br/>
+<table>
+  <tr>
+    <th>Usuario</th>
+    <th>Comentario</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @coments.each do |coment| %>
+  <tr>
+    <td><%= coment.usuario.truncate(20) %></td>
+    <td><%= coment.comentario %></td>
+    <td><%= link_to 'Eliminar', coments_path, confirm: 'Eliminar Comentario?', method: :delete, class: "btn" %></td>
+  </tr>
+<% end %>
+</table>
+
+
+
+<% content_for :columnaI do%>
+<h2>Admin</h2>
+<hr class="soften">
+<ul>
+	<li><%=link_to "Temas", temas_path%></li>
+	<hr class="soften">
+	<li><%=link_to "Artículos", articulos_path%></li>
+	<hr class="soften">
+	<li><%=link_to "Ir al Sitio", root_path%></li>
+</ul>
+<br/>
+<%= link_to "Salir", destroy_user_session_path, method: :delete , class: "btn" %>
+<%end%>
