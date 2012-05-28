@@ -51,7 +51,7 @@ ul{margin:0; padding:0; list-style:none;}
 .titulo{color:#fff; padding:10px 5px; background:#333; display:inline; }
 .clear{clear:both;}
 .ocultar{visibility:hidden;}
-.colL{width:200px; margin:10px; float:right; }
+.colL{width:200px; margin:10px; float:right; padding-left:80px;}
 .colL h2{color:#f8b505; }
 .colR{float:left; margin:10px; width:720px;}
 .flash-notice{background:#f8b505; padding:5px;
