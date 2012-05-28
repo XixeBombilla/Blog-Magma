@@ -1,13 +1,14 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+uno:
+  titulo: PrimerTitulo
+  autor: AutorUno
+  descripcion: DescripcionUno
+  tema_id: 1
+  id: 1
 
-one:
-  titulo: Primer Titulo
-  autor: Autor Uno
-  descripcion: Descripcion Uno
-  tema: Primer Tema
-
-two:
-  titulo: Segundo Titulo
-  autor: Autor Dos
-  descripcion: Descripcion Dos
-  tema: Propietario Dos
+dos:
+  titulo: SegundoTitulo
+  autor: AutorDos
+  descripcion: DescripcionDos
+  tema_id: 2
+  id: 2

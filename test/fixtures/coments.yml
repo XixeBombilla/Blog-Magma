@@ -1,11 +1,11 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
 
-one:
-  usuario: MyString
-  comentario: MyText
-  articulo: 
+comentUno:
+  usuario: Usuario_uno
+  comentario: Comentario_para_uno
+  articulo_id: 1
 
-two:
-  usuario: MyString
-  comentario: MyText
-  articulo: 
+comentDos:
+  usuario: Usuario_dos
+  comentario: Comentario_para_dos
+  articulo_id: 2 
